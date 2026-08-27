@@ -1,0 +1,117 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "courses": "Courses",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register"
+  },
+  "Hero": {
+    "title": "Stock Market Training",
+    "subtitle": "Mongolia's most understandable, practice-oriented stock market learning platform. Start learning at your own pace, from anywhere.",
+    "cta": "Browse Courses",
+    "searchPlaceholder": "Search courses...",
+    "allCourses": "All courses",
+    "freeCourses": "Free",
+    "paidCourses": "Paid",
+    "bundleCourses": "Bundles"
+  },
+  "Courses": {
+    "title": "Featured Courses",
+    "subtitle": "From stock market fundamentals to advanced trading strategies",
+    "viewAll": "All courses",
+    "details": "Details",
+    "duration": "days",
+    "lessons": "lessons",
+    "tabs": {
+      "featured": "Featured",
+      "paid": "Paid",
+      "free": "Free"
+    },
+    "categories": {
+      "title": "Course Categories",
+      "beginner": "Beginner",
+      "technical": "Technical Analysis",
+      "fundamental": "Fundamental Analysis",
+      "strategy": "Trading Strategy"
+    }
+  },
+  "WhyUs": {
+    "title": "Why InvestLab?",
+    "subtitle": "We offer tailored, clear, and effective training for every learner.",
+    "items": {
+      "anywhere": {
+        "title": "Anytime, anywhere",
+        "description": "Learn from any device with an internet connection. At work, home, or on the go."
+      },
+      "save": {
+        "title": "Save time and money",
+        "description": "More flexible and affordable than classroom training. Learn at your own pace."
+      },
+      "control": {
+        "title": "Control your learning",
+        "description": "Rewatch lessons, follow your own schedule, and learn from expert instructors."
+      }
+    }
+  },
+  "Pricing": {
+    "title": "Learning Plans",
+    "subtitle": "Choose the plan that fits you and start exploring the stock market world.",
+    "monthly": "month",
+    "yearly": "year",
+    "perMonth": "per month",
+    "features": "Includes",
+    "cta": "Get plan",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect for mastering the basics"
+      },
+      "pro": {
+        "name": "Trader",
+        "description": "Practical strategy and analysis lessons"
+      },
+      "premium": {
+        "name": "Professional",
+        "description": "All courses, premium content, webinars"
+      }
+    }
+  },
+  "Blog": {
+    "title": "Latest Articles",
+    "subtitle": "Market news, analysis, and learning tips",
+    "readMore": "Read more",
+    "viewAll": "All articles"
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "InvestLab aims to make stock market education accessible to everyone.",
+    "mission": "Our Mission",
+    "missionText": "We teach Mongolian citizens stock market knowledge and skills in a clear, practical way, supporting financial independence.",
+    "values": "Our Values",
+    "team": "Our Team"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Reach out to us about courses, plans, or partnerships.",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Thank you, we will contact you soon."
+    }
+  },
+  "Footer": {
+    "tagline": "Stock market training platform",
+    "links": "Links",
+    "contact": "Contact",
+    "rights": "© 2026 InvestLab. All rights reserved."
+  }
+}

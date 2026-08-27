@@ -1,0 +1,30 @@
+{
+  "name": "investlab",
+  "template_type": "business",
+  "tone": "modern",
+  "language": "mn",
+  "languages": [
+    "mn",
+    "en"
+  ],
+  "sections": [
+    "hero",
+    "services",
+    "pricing",
+    "blog",
+    "about",
+    "contact"
+  ],
+  "client_portal_id": "WmjYCYmnblTxCXypq3N_T",
+  "erxes_endpoint": "https://altanbaganamyagmarjav.next.erxes.io/gateway/graphql",
+  "erxes_app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRQb3J0YWxJZCI6IldtallDWW1uYmxUeENYeXBxM05fVCIsImlhdCI6MTc4NzgyNzUxMH0.KyCynxT7ZEXZcH3pHEnIfRiKMAZybIiUe1PXqwkxmzs",
+  "erxes_cms_id": "6a90155eed3454d670ee17f9",
+  "color_hint": null,
+  "extra_notes": null,
+  "deploy_target": "vercel",
+  "ui_source": "website",
+  "ui_source_ref": "https://www.chagnuur.mn",
+  "design_strategy": "improve-site",
+  "reference_url": "https://www.chagnuur.mn",
+  "competitor_urls": []
+}

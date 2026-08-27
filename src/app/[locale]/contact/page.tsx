@@ -1,0 +1,15 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Contact from "@/components/sections/Contact";
+
+export default function ContactPage() {
+  return (
+    <>
+      <Header />
+      <main className="flex-1 bg-white py-12">
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
+}
