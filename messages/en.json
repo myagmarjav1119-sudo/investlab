@@ -67,7 +67,7 @@
     "cta": "Get plan",
     "plans": {
       "starter": {
-        "name": "Starter",
+        "name": "Enthusiast",
         "description": "Perfect for mastering the basics"
       },
       "pro": {
