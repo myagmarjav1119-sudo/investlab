@@ -71,11 +71,11 @@
         "description": "Perfect for mastering the basics"
       },
       "pro": {
-        "name": "Intermediate",
+        "name": "Beginner",
         "description": "Core analysis, demo trading, and market information"
       },
       "premium": {
-        "name": "Professional",
+        "name": "Intermediate",
         "description": "All courses, premium content, webinars"
       }
     }
