@@ -6,9 +6,9 @@ import { Check } from "lucide-react";
 const plans = [
   {
     key: "starter",
-    price: "49,900₮",
-    period: "monthly",
-    features: ["10+ үндсэн хичээл", "Анхан шатны стратеги", "ЧатROOM хандалт", "Сертификат"],
+    price: "99,000₮",
+    period: "yearly",
+    features: ["10+ үндсэн хичээл", "Зах зээлийн мэдээлэл", "Сертификат"],
   },
   {
     key: "pro",
