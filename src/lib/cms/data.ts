@@ -46,6 +46,8 @@ export async function getCourses(locale: string): Promise<Post[]> {
   return data?.cpPosts || [];
 }
 
+const HIDDEN_POST_SLUGS = ["stocks-education-article", "stocks-education-blog", "stocks-education"];
+
 export async function getBlogPosts(locale: string): Promise<Post[]> {
   const client = await getServerApolloClient();
   const { data } = await client.query<CpPostsData>({
@@ -53,7 +55,7 @@ export async function getBlogPosts(locale: string): Promise<Post[]> {
     variables: { language: locale, status: "published", categoryIds: [BLOG_CATEGORY_ID], limit: 6 },
     context: { fetchOptions: { cache: "no-store" } },
   });
-  return data?.cpPosts || [];
+  return (data?.cpPosts || []).filter((post) => !HIDDEN_POST_SLUGS.includes(post.slug || ""));
 }
 
 export async function getPostList(locale: string): Promise<Post[]> {
