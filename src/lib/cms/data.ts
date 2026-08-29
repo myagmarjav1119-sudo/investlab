@@ -33,6 +33,29 @@ export async function getPosts(locale: string): Promise<Post[]> {
   return data?.cpPosts || [];
 }
 
+const BLOG_CATEGORY_ID = "ps6dE-JUdKTVpUAghkIge";
+const COURSE_CATEGORY_ID = "_6ZX7UxuZLyXKwxTvvQQg";
+
+export async function getCourses(locale: string): Promise<Post[]> {
+  const client = await getServerApolloClient();
+  const { data } = await client.query<CpPostsData>({
+    query: CP_POSTS,
+    variables: { language: locale, status: "published", categoryIds: [COURSE_CATEGORY_ID], limit: 6 },
+    context: { fetchOptions: { cache: "no-store" } },
+  });
+  return data?.cpPosts || [];
+}
+
+export async function getBlogPosts(locale: string): Promise<Post[]> {
+  const client = await getServerApolloClient();
+  const { data } = await client.query<CpPostsData>({
+    query: CP_POSTS,
+    variables: { language: locale, status: "published", categoryIds: [BLOG_CATEGORY_ID], limit: 6 },
+    context: { fetchOptions: { cache: "no-store" } },
+  });
+  return data?.cpPosts || [];
+}
+
 export async function getPostList(locale: string): Promise<Post[]> {
   const client = await getServerApolloClient();
   const { data } = await client.query<{

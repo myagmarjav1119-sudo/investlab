@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogPosts from "@/components/sections/BlogPosts";
-import { getPosts } from "@/lib/cms/data";
+import { getBlogPosts } from "@/lib/cms/data";
 
 export default async function BlogPage({
   params,
@@ -9,7 +9,7 @@ export default async function BlogPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const posts = await getPosts(locale);
+  const posts = await getBlogPosts(locale);
 
   return (
     <>

@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FeaturedCourses from "@/components/sections/FeaturedCourses";
-import { getPosts } from "@/lib/cms/data";
+import { getCourses } from "@/lib/cms/data";
 
 export default async function CoursesPage({
   params,
@@ -9,7 +9,7 @@ export default async function CoursesPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const posts = await getPosts(locale);
+  const posts = await getCourses(locale);
 
   const courses = posts.map((post) => ({
     _id: post._id,

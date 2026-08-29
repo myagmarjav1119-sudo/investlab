@@ -7,7 +7,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Pricing from "@/components/sections/Pricing";
 import BlogPosts from "@/components/sections/BlogPosts";
 import Contact from "@/components/sections/Contact";
-import { getPosts } from "@/lib/cms/data";
+import { getCourses, getBlogPosts } from "@/lib/cms/data";
 
 export default async function Home({
   params,
@@ -15,9 +15,10 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const posts = await getPosts(locale);
+  const coursePosts = await getCourses(locale);
+  const blogPosts = await getBlogPosts(locale);
 
-  const courses = posts.map((post) => ({
+  const courses = coursePosts.map((post) => ({
     _id: post._id,
     title: post.title,
     excerpt: post.excerpt,
@@ -37,7 +38,7 @@ export default async function Home({
         <FeaturedCourses courses={courses} />
         <WhyChooseUs />
         <Pricing />
-        <BlogPosts posts={posts} />
+        <BlogPosts posts={blogPosts} />
         <Contact />
       </main>
       <Footer />
