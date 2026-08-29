@@ -46,7 +46,12 @@ export async function getCourses(locale: string): Promise<Post[]> {
   return data?.cpPosts || [];
 }
 
-const HIDDEN_POST_SLUGS = ["stocks-education-article", "stocks-education-blog", "stocks-education"];
+const HIDDEN_POST_SLUGS = [
+  "stocks-education-article",
+  "stocks-education-blog",
+  "stocks-education",
+  "stock-introduction",
+];
 
 export async function getBlogPosts(locale: string): Promise<Post[]> {
   const client = await getServerApolloClient();
